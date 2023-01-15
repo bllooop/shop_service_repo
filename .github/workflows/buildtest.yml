@@ -16,6 +16,7 @@ jobs:
     - name: Build the test Docker image
       run: docker build . --file Dockerfile -t bluero/shops-service:latest
 
+
     - name: Login into Docker Hub
       uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
       with:
