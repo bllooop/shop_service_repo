@@ -28,3 +28,6 @@ async def get_shops_by_id(id: int):
         return output[0]
     raise HTTPException(status_code=404, detail="Shop not found")
  
+@app.get("/__health")
+async def check_service():
+    return
